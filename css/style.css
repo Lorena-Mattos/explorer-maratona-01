@@ -54,6 +54,10 @@ button {
   transition: filter .2s;
 }
 
+button:nth-last-child(1) {
+  background: linear-gradient(135deg, rgb(125, 24, 208) 0%, rgb(33, 47, 128) 100%);
+}
+
 /* pseudo-class :hover */
 button:hover {
   filter: brightness(1.2);
