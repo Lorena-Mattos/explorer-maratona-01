@@ -13,34 +13,45 @@ body {
 }
 
 #container {
-  margin-top: 100px;
-  width: 80%;
+  margin-top: 145px;
+  width: 100%;
   max-width: 400px;
   margin-inline: auto;
+
+  background-color: rgba(11, 16, 82, 0.373)  ;    
+  padding: 25px 10px 25px;
+  border-radius: 10px;
 }
 
 img {
-  width: 85%;
+  width: 65%;
 }
 
 h1 {
+  width: 100%;
+  font-size: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
   opacity: 1.0;
+  white-space: nowrap;
+  text-align: center;
 }
 
 p {
+  font-size: 16px;
   margin-bottom: 20px;
   opacity: 0.9;
 }
 
 input, button {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin-inline: auto;
 
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 4px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  opacity: 1;
 }
 
 input {
