@@ -1,5 +1,6 @@
 const respostaElement = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#inputPergunta")
+const buttonPerguntar = document.querySelector("#buttonPerguntar")
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -31,6 +32,8 @@ function fazerPergunta() {
     return
   }
 
+  buttonPerguntar.setAttribute("disabled", true)
+
   const pergunta = "<div>" + inputPergunta.value + "</div>"
 
   // gerar numero aleatorio
@@ -40,10 +43,12 @@ function fazerPergunta() {
 
   respostaElement.innerHTML = pergunta + respostas[numeroAleatorio]
 
+  respostaElement.style.opacity = 1;
   // sumir a resposta depois de 3 seg depois de um certo tempo
 
   setTimeout(function() {
     respostaElement.style.opacity = 0;
+    buttonPerguntar.removeAttribute("disabled")
   }, 3000)
 
 }
