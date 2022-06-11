@@ -27,4 +27,4 @@
 
 
 
-### imagens salvas na past "images"
+### imagens salvas na pasta "images"
