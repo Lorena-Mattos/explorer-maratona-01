@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vou revelar seu destino!</title>
+  
+  <script type="text/javascript" src="js/script.js" defer></script>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,8 +14,11 @@
     <img src="images/raven.gif" alt="gif de uma mulher negra ao qual o gif mostra ela tendo uma visão do futuro"/>
     <h1>Vou revelar seu destino!</h1>
     <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-    <input type="text" placeholder="Digite sua pergunta" />
-    <button>Fazer Pergunta</button>
+  
+    <input id="inputPergunta" type="text" placeholder="Digite sua pergunta" />
+    <button onclick="fazerPergunta()">Fazer Pergunta</button>
+
+    <h3 id="resposta"></h3>
   </div>
 </body>
 </html>
